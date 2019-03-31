@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #4b4b4b;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.jua {
+    font-family: 'Jua', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.4em;
+}
+
+.container, .form-row{
+    max-width: 100%;
+    padding: 0;
+    min-width: 1024px;
+}
+
+[class^="col"] {
+    padding: 0;
+}
+
+.navbar a {
+    font-weight: bold;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-body {
+    flex-wrap: nowrap;
+}
+
+.form-row {
+    justify-content: center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.search-bar {
+    padding: 0.7em;
+    background: #99a6b3;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 2px 2px #000000;
+        -moz-box-shadow: 0px 2px 2px #000000;
+            box-shadow: 0px 1px 3px #AEAEAE;
+}
+
+.card-header {
+    color: #ffffff;
+    background: #476F9C;
+    border-radius: 0 !important;
+}
+
+.card-header p {
+    font-size: 75%;
+}
+
+.card-body {
+    padding: 0;
+    font-size: 90%;
+    display: flex;
+}
+
+.card-body div {
+    text-align: center;
+    align-self: center;
+}
+
+.btn-primary {
+    background: #476F9C;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background: #153452;
+}
+
+#events {
+    height: 100vh;
+    overflow: auto;
+    border-right: 1px solid #CECECE;
+    padding-bottom: 100px;
+}
+
+.btn-sm {
+    margin-top: 5px;
+}
+
+.bg-focus {
+    background: #dedede;
+}
+
+h5 {
+    padding-top: 50%;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}

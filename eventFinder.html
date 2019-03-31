@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Finder</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Jua|Poppins" rel="stylesheet">
+
+    <link rel="stylesheet" href="eventFinderAssets/css/style.css">
+</head>
+
+<body>
+    <header class="navbar navbar-light bg-light justify-content-center">
+        <a class="jua">FIND AN EVENT NOW!</a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="search-bar">
+                <form>
+                    <div class="form-row">
+                        <div class="col-3">
+                            <!-- Location Selection -->
+                            <select name="city" id="TM-City-Select" class="cityside custom-select"></select>
+                        </div>
+                        <div class="col-3">
+                            <!-- Category Selection -->
+                            <select name="Category" id="Cat" class="cityside custom-select">
+                                <option value="null">Select Category</option>
+                                <option value="Music">Music</option>
+                                <option value="Arts &amp; Theatre">Art and Theatre</option>
+                                <option value="Event Style">Event Style</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Venue Based">Venue Based</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <!-- Sub Category Selection -->
+                            <select name="SubCategory" id="SubCat" class="cityside custom-select"></select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4" id="events">
+                        <div id="eventPlaceHolder">
+                            <h5>Please choose location & category above to see list of events.</h5>
+                        </div>
+                    </div>
+                    <div class="col-8" id="map" style="overflow:hidden;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7S0i7eNHqNekovmb6LjPjaKMd-t2XMJ0&callback=initMap"></script>
+
+    <script src="eventFinderAssets/javascript/app.js"></script>
+
+</body>
+
+</html>
